@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+body {
+    background-color: #e6ffe6;
+}
+
 .header-container {
     background: url('/media/background_color.png') no-repeat center;
     min-width: 100%;
@@ -68,7 +72,74 @@ html {
     background: #000 !important;
 }
 
-/* -------------------------------- Media Queries */
+.header-container {
+    padding-top: 164px;
+}
+}
+
+.fat-hr {
+border: 16px solid black;
+}
+
+.w-5 {
+    border: 5px solid black;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+/* --------------- Gallery-section -----------------*/
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* ---------------- Media Queries ----------------*/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -87,7 +158,4 @@ html {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
-}
+ 
