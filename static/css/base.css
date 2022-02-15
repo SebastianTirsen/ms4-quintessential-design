@@ -119,7 +119,15 @@ div.gallery {
     float: left;
     width: 24.99999%;
   }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
+/* ---------------- Media Queries ----------------*/
+
   @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
@@ -133,13 +141,6 @@ div.gallery {
     }
   }
   
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-/* ---------------- Media Queries ----------------*/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -157,5 +158,3 @@ div.gallery {
         left: 0;
         z-index: 1030;
     }
-
- 
