@@ -28,6 +28,14 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
+    choices = (
+            ('1', 'Poor'),
+            ('2', 'Used'),
+            ('2', 'Good'),
+        )
+  
+    condition = models.CharField(max_length=300, null=True, blank=True, choices = choices)
+
     def __str__(self):
         return self.name
 
