@@ -89,6 +89,16 @@ border: 16px solid black;
     text-align: center;
 }
 
+.backdrop{
+  background: #e6ffe6;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
 
 /* --------------- Gallery-section -----------------*/
 
