@@ -168,6 +168,9 @@ div.gallery {
         left: 0;
         z-index: 1030;
       }
+      #mob-support {
+        display: none;
+      }
 
       .header-container {
           padding-top: 164px;
@@ -178,6 +181,10 @@ div.gallery {
   @media (max-width: 991px) {
       .header-container {
           padding-top: 116px;
+      }
+
+      #base-support {
+        display: none;
       }
   
       body {
