@@ -135,6 +135,11 @@ div.gallery {
     display: table;
     clear: both;
   }
+
+  a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
   
 /* ---------------- Media Queries ----------------*/
 
