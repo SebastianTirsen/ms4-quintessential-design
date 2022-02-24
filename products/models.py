@@ -29,12 +29,26 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     choices = (
-            ('1', 'Poor'),
+            ('1', 'Worn'),
             ('2', 'Used'),
             ('2', 'Good'),
         )
   
     condition = models.CharField(max_length=300, null=True, blank=True, choices = choices)
+
+    brand = models.CharField(max_length=254, null=True, blank=True)
+
+    color = models.CharField(max_length=254, null=True, blank=True)
+
+    size = models.CharField(max_length=254, null=True, blank=True)
+
+    gender = (
+            ('1', 'Male'),
+            ('2', 'Female'),
+            ('2', 'Unisex'),
+        )
+
+    gender = models.CharField(max_length=254, null=True, blank=True, choices = gender)
 
     def __str__(self):
         return self.name
