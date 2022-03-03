@@ -136,11 +136,15 @@ a.category-badge > span.badge:hover {
   right: 10px;
 }
 
-.btt-link {
+.btt-link, 
+.update-link,
+.remove-item {
   cursor: pointer;
+}
+
+.fat-border {
   border: 4px solid black;
 }
-python
 /* --------------- Gallery-section -----------------*/
 
 div.gallery {
