@@ -145,6 +145,22 @@ a.category-badge > span.badge:hover {
 .fat-border {
   border: 4px solid black;
 }
+
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+  z-index: 99999999999;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 2px;
+}
+
 /* --------------- Gallery-section -----------------*/
 
 div.gallery {
