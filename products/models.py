@@ -10,7 +10,7 @@ class Category(models.Model):
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.friendly_name
 
     def get_fiendly_name(self):
         return self.friendly_name

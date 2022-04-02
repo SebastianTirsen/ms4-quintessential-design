@@ -1,1 +1,1 @@
-Vintage Design Confirmation for Order Number {{ order_order_number }}
+Vintage Design Confirmation for Order Number {{ order.order_number }}
