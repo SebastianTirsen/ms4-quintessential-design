@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-#3jwx-$ax0v5!z4#bh)b_$qz1h#-^y-rsf=&0!0!tm&82)x4es
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vintage-design.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -118,12 +118,17 @@ WSGI_APPLICATION = 'ms4_vintage_design.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 
